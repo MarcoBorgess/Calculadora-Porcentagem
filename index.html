@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <link rel="icon" href="https://www.iconsdb.com/icons/preview/green/percentage-xxl.png">
     <title>Calculadora Porcentagem</title>
 
@@ -14,16 +15,27 @@
     </div>
     <div class="entrada">
         <label for="n1">Quanto é</label>
-        <input type="number" name="n1" id="" class="ipct">
+        <input type="number" name="n1" id="n1" class="ipct">
         <span class="pct">%</span>
         <label for="n2">de</label>
-        <input type="number" name="n2" id="" class="">
+        <input type="number" name="n2" id="n2" class="">
         <label for="n2">?</label>
     </div>
     <div class="saida">
-        <button class="">Calcular</button>
-        <input type="number" readonly class="" placeholder="">
+        <button class="" onclick="calcularpct()">Calcular</button>
+        <input type="text" readonly id="resultado1">
     </div>
-    
+    <!-- segundo -->
+    <div class="entrada">
+        <label for="n11">O valor </label>
+        <input type="number" name="n21" id="n11" class="">
+        <label for="n22">é qual porcentagem de</label>
+        <input type="number" name="n22" id="n22" class="ipct">
+        <label for="n22">?</label>
+    </div>
+    <div class="saida">
+        <button class="" onclick="calcularvlr()">Calcular</button>
+        <input type="text" readonly id="resultado2">
+    </div>
 </body>
 </html>
