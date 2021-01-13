@@ -20,7 +20,7 @@ function calcularvlr(){
 
     r=(n11*100)/n22;
     if(r>=0 || r<0) {
-        document.getElementById('resultado2').value=r;
+        document.getElementById('resultado2').value=r+"%";
     }else{
         document.getElementById('resultado2').value="Inválido";
     };
